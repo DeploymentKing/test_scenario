@@ -20,13 +20,13 @@
 
  - make
  - gcc
- - <stdio.h>
- - <time.h>
- - <sys/time.h>
- - <stdlib.h>
- - <unistd.h>
- - <string.h>
- - <openssl/sha.h>
+ - \<stdio.h\>
+ - \<time.h\>
+ - \<sys/time.h\>
+ - \<stdlib.h\>
+ - \<unistd.h\>
+ - \<string.h\>
+ - \<openssl/sha.h\>
 
 
 
