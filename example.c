@@ -17,8 +17,8 @@ int main(int argc, char *argv[])
     const char ibuf[] = "Hello, World";
     const char obuf[20];
 
-    SHA1((unsigned char*)ibuf, strlen(ibuf), (unsigned char*)obuf);
-
+/*    SHA1((unsigned char*)ibuf, strlen(ibuf), (unsigned char*)obuf);
+*/
     gettimeofday(&tv, NULL);
     curtime=tv.tv_sec;
     strftime(buffer,30,"%m-%d-%Y  %T.",localtime(&curtime));
@@ -30,10 +30,10 @@ int main(int argc, char *argv[])
 
     usleep(100000);
 
-    for (int i = 0; i < 20; i++) {
+ /*   for (int i = 0; i < 20; i++) {
         printf("%02x ", obuf[i]);
     }
-
+*/
     printf("\n");
 
     r2 = rand() % 20;
