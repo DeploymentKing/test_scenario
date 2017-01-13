@@ -1,6 +1,7 @@
 node {
 
   stage('build binary') {
+    checkout scm
     sh 'make'
   }
 
