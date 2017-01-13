@@ -5,7 +5,7 @@ node {
   }
 
   stage('run binary') {
-    sh './test && echo "ran okay" || echo "designed to fail randomly"''
+    sh './test && echo "ran okay" || echo "designed to fail randomly"'
   }
 
 }
