@@ -6,7 +6,11 @@ node {
   }
 
   stage('run binary') {
-    sh './test && echo "ran okay" || echo "designed to fail randomly"'
+    try {
+      sh './test'
+    } catch(e) {
+      echo "test is desigend to randomly fail"
+      currentBuild.result = "UNSTABLE"
+    }
   }
-
 }
